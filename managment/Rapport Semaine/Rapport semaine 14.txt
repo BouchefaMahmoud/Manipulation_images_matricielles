@@ -1,0 +1,21 @@
+Rapport du 13/05/2019 au 17/05/2019:
+
+Ce qui fait la semaine derniere : 
+
+	-
+
+
+Ce qui est en cours :
+
+
+	-Achevèment de certains modules et certaines fonctions
+	-Nouvelle restructuration du projet et mise à jour
+	-Ajout des tests unitaires
+	-Finalisation du projet
+	-Rapport final
+
+Commentaires : 
+
+	-Mise en place et utilisation du module Check pour permettre de faire les tests unitaires citée dans le cours n°8 et conseillé par le professeur d'amphithéatre.
+
+

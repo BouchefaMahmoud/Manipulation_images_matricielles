@@ -1,0 +1,5 @@
+Compte rendu de la semaine du  18/02/2019  au  22/02/2019 : 
+Le plan du projet :			
+1- Decouverte de la SDL
+2- Premiere approche de la SDL(Creation de la fenetre, Creation du rendu, Creation texture, Gestion des Evenements)
+3- Decouverte de SDL_GFX

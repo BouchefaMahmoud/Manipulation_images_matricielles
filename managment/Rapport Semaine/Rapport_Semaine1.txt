@@ -1,0 +1,24 @@
+Compte rendu de la semaine du  11/02/2019  au  15/02/2019 : 
+Le plan du projet :			
+1- les commentaires, les variables, les noms fonction et des modules sont en français
+ 
+2-les noms des fonctions et des variables  en minuscule, on utilsera '_' pour séparrer les mots // snake case
+3- les noms des constantes en majuscule 
+4-L'indentation du code se fait à la manière de python, à savoir, un tab de 4 espaces pour chaque nouveau bloc 
+5- on ne fait pas de retour à la ligne pour la première accolade d'un bloc
+6- petit espace pour séparer les arguments d'une fonction 
+7-les modules ( fichiers.h )  sans précédé par un bloc de commentaire /* */ récaputulatif ou descriptif 
+8-chaque fonction est précédé également d'un bloc de commentaire ayant cette syntaxe : 
+/**
+*Fonction  : description de la fonction, et le retour de la fonction éventuellement  
+* arg : description de chaque argument
+à en parler en groupe
+*/
+9- mettre des commentaires à l'intérieur de la fonction pour expliquer les opérations complexes, mais pas au point de rendre le code illisible 
+10- la taille d'une fonction en ligne de code ne doit pas dépasser la taille de l'écran
+ 
+
+
+
+
+

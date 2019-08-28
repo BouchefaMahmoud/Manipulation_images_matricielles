@@ -1,0 +1,24 @@
+Rapport du 22/04/2019 au 26/04/2019
+
+Ce qui a été effectué :
+
+	-DAVID ELRAIS : Debuggage et ecriture des fonctions sur les pixels
+	-RUDY CESARION : Debuggage et ecriture du parseur (ajout des commandes pour sur le parseur)
+	-BOUCHEFA MAHMOUD : ???
+
+Ce qui est en cours :
+
+	-Mise en place de la structure du projet 
+	-Mise en place du module screen.c qui permettra à lancer et gerer des fenetres
+	-Debuggage et ecriture du parseur (ajout des commandes pour sur le parseur)
+
+Ce qui sera à faire:
+
+	-Debbuge et ecriture du parseur
+	-mise en place de la structure screen dans les fonctions qui manipulent les pixels
+
+
+Commentaires : 
+	
+	Mise en place dans notre projet de la notion de la modularité citée dans le Cours n°4 entre les modules construit et ce à venir.
+

@@ -1,0 +1,17 @@
+Rapport du 29/04/2019 au 03/05/2019:
+
+Ce qui a été effectué la semaine derniere :
+
+	-Debbuge et ecriture du parseur
+	-Mise en place de la structure screen dans les fonctions qui manipulent les pixels
+	-Correction et mise à jour du parseur
+	-Ajout de la boucle principale
+	-Ajout du Makefile
+	-Ajout de la fonction qui effectue la lecture au clavier sur l'entreée standard
+
+Ce qui est en cours :
+
+	-Restructuration du projet et ajout d'un Makefile recursif
+	-Changement de la variable globale
+	-Ajout du module zone et de son affichage
+

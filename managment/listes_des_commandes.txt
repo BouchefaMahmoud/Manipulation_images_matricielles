@@ -1,0 +1,367 @@
+    ************** Listes des commandes **************
+
+
+    Nous allons dans ce projet, créer des commandes qui nous permettrons de maitriser
+    notre editeur d'image. Cette liste est non-exhaustive.
+
+        Sur la partie Copier, Coller, Couper :
+
+          --------Aspect des commandes------:
+
+          >$ copy zone(x1 y1 x2 y2) image
+
+          >$ paste zone(x1 y1 x2 y2) "image1...imageN"
+
+          >$ cut zone(x1 y1 x2 y2) image
+
+
+						Specification du Projet : Un Ã©diteur d'images
+
+
+Syntaxe d'une commande :
+	Nom_de_la_commande [options]: Description
+
+
+Liste des commandes :
+	* Chargement et sauvegarde d'image :
+		- charger [lien] : Charger une (ou plusieur) image(s) en memoire
+		- transferer [-n : Nouvelle Fenetre] : Transfere une image vers la fenetre courant ou vers une nouvelle fenetre
+		- fenetre [-n] : Permet d'ouvrir une fenetre ou n fenetre
+		- sauvegarde [nom] [format] [chemin] : Permet de sauvegarder une image dans le repertoire courant ou dans un chemin specifie
+
+	* Copier, Coller, Couper :
+		- copier [coordonnees] [image] : permet a partir de 4 coordonnees, copier une zone delimitee par ces coordonnees, l'image
+			courante
+		- coller [buffer] [image_1...image_n] : colle la zone stockÃ© dans le buffer courante, sur une ou plusieurs images
+		- couper [coordonnees] [image] : coupe la zone delimite par les 4 coordonnees sur l'image courante
+
+
+Sélection de région : 
+	1.Evenements souris   :
+		commande :selectMouse /* pas d'arguments */
+
+
+
+
+		/************************/
+	
+
+
+
+	2.Selectionner une region	:
+		commande : select [-argument prend la position x (int)] [-argument prend la position y (int)] [-argument prend le width (int)] [-argument prend le height (int)]
+
+
+
+
+
+		/************************/
+	
+
+
+
+
+	3.Deselectionner la region :
+		commande : deselect /* pas d'arguments */
+
+
+
+
+
+		/************************/
+	
+
+
+	4.Effacer une zone :
+		commande : removeZone /* pas d'arguments */
+
+
+
+
+
+
+Visualisation d'images :
+	1.Ouverture d'image dans une fenetre dans plusieurs d'autres fenetres
+		commande : screen [-chemin de l'image à charger]
+
+
+
+
+Interface utilisateur :
+	1.Reprendre la main avec la souris :
+		commande : mouse /* pas d'arguments */
+
+
+
+
+		/************************/
+
+
+
+
+	2.Annuler la modification effectue sur l'image selectionnee :
+		commande : cancel /* pas d'arguments */
+
+
+
+
+		/************************/
+
+
+
+
+	3.Sortir du programme : 
+		commande : quite /* pas d'arguments */		
+
+
+
+
+		/************************/
+
+
+
+
+	4.Recadrage :
+		commande : reframe /* pas d'arguments */
+
+
+
+
+		/************************/
+
+
+
+	5.Fermer la fenetre en cours : 
+		commande : fermer /* pas d'arguments */
+
+
+
+
+		/************************/
+
+
+
+
+	6.Donner les informations de RGB sur le pixel a une position donnee par l'utilisateur
+		commande : info [-argument en position x] [-argument en position y]
+
+
+
+
+		/************************/
+
+
+
+
+	7.Export d'une image (recuperer l'extension et le chemin de l'image)
+		commande : export [-argument pour le chemin de l'image]
+
+
+
+
+		/************************/
+
+
+
+
+	8.Aide pour l'utilisateur, liste toutes les commandes
+		commande : help /* pas d'arguments */
+
+
+
+
+		/************************/
+
+
+
+
+
+Chargement et sauvegarde d'images : 
+	1.Charger en memoire : 
+		commande : image [-chemin de l'image a charger]
+
+
+
+
+		/************************/
+
+
+
+
+	2.Transferer une image vers une fenetre deja ouverte ou vers une nouvelle fenetre :
+		commande : set-image [-chemin de l'image a charger]
+
+
+
+
+		/************************/
+
+
+
+
+	3.Sauvegarder sous son format d'origine : 
+		commande : save [-chemin de destination] [-extension du fichier]
+
+
+
+
+		/************************/
+
+
+
+
+	4.Changer d'un format d'image vers un nouveau format d'image :
+		commande : changeExtension [-nouvelle image avec l'extension]
+
+
+
+Copier, Couper, Coller : 
+	1.Copier :
+		commande : copy
+
+
+
+
+		/************************/
+
+
+
+
+	2.Coller : 
+		commande : paste [-argument de la 1er coordonnée] [-argument de la 2eme coordonnée]
+
+
+
+
+Transformations : 
+	1.Symetrie verticale de l'image selectionnée :
+		commande : horizontal (* pas d'arguments *)
+
+
+
+
+		/************************/
+
+
+
+
+	2.Symetrie horizontale de l'image selectionnée :
+		commande : vertical (* pas d'arguments *)
+
+
+
+
+		/************************/
+
+
+
+
+	3.Rotation de l'image par un multiple de 90° : 
+		commande : rotate [-argument qui donner de combien l'angle va etre à tourner de (nombre de 0 à 360]
+
+
+
+
+		/************************/
+
+
+
+
+	4.Recadrage de l'image par decoupage rectangulaire :
+		commande : reframe /* pas d'arguments */
+
+
+
+
+		/************************/
+
+
+
+
+	5.Recadrage de l'image par agrandissement de la zone de travail :
+		commande : reframe /* pas d'arguments */
+
+
+
+
+		/************************/
+
+
+
+
+	6.Modification de la taille de l'image : 
+		commande : zoom [-argument qui permet de zoomer (nombre de 0 à 100)]
+
+
+
+
+		/************************/
+
+
+
+
+	7.Remplissage par une couleur donnée
+		commande : fillColor [-argument qui va etre interpreter pour la couleur Rouge ( int 0 à 255)] [-argument qui va etre interpreter pour la couleur Verte (0 à 255)] [-argument qui va etre interpreter pour la couleur Bleu (0 à 255)]
+
+
+
+
+		/************************/
+
+
+
+
+	8.Remplacement de couleur avec marge de tolerance
+
+		/* precision : les 3 premiers arguments servent à donner la couleur sur laquelle on voudra effectuer le remplacement, les 3 suivant serviront à donner la couleur de destination (qui va remplacer celle de depart), le dernier argument correspond à la marge de tolérance */
+
+		commande : replaceColor [-argument source pour la couleur rouge ( int 0 à 255)] [-argument source pour la couleur verte ( int 0 à 255)] [-argument source pour la couleur bleu ( int 0 à 255)] [-argument destination pour la couleur rouge ( int 0 à 255)] [-argument destination pour la couleur verte ( int 0 à 255)] [-argument destination pour la couleur bleu ( int 0 à 255)] [-argument pour la marge de tolérance ( int 0 à 255)]
+
+
+
+
+		/************************/
+
+
+
+
+	9.Mise en négatif :
+		commande : negatif (* pas d'arguments *)
+
+
+
+
+		/************************/
+
+
+
+
+	10.Mise en noir et blanc + gestion du niveau de gris :
+
+		/* precision : l'unique argument va effectuer mise en noir et blanc et va ajuster la mise en niveau de gris */
+		
+		commande : black-white [-argument qui va gerer la mise en noir et blanc et la mise en niveau de gris (int 0 à 100)]
+
+
+
+
+		/************************/
+
+
+
+
+	/* Ajout et implementation d'une autre fonctionnalité supplementaire */
+	11.Gestion de la luminosité : 
+		commande : brightness [-argument qui va gerer la luminosité (int 0 à 100)]
+
+
+
+
+
+		/************************/
+
+
+
+
+	12.Contraste de l'image : 
+		commande : contrast [-argument qui va gerer le contraste (int 0 a 255)]

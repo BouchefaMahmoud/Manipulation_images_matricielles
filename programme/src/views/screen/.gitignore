@@ -1,0 +1,7 @@
+*.a
+*.o
+<<<<<<< HEAD
+=======
+.vscode/*
+>>>>>>> a91e0eb451531abcad901f1ff6f2176bb3ec0fbd
+

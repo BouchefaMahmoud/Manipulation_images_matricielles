@@ -1,0 +1,31 @@
+Rapport semaine 4 : 
+
+
+problèmes résolus : 
+	Mise au point d'une architecture multi-fenêtres à données partagés( une structure de données contenants les options ) 
+
+déscription : 
+	le thread principal va écouter sur l'entrée standart ( le shell ) et remplire la structure options, 
+        entre temps un thread de fenêtre est lancé et est entrain d'écouter les changement appliqué à la structure et réagi à chaque option
+	  
+		
+Problèmes rencontrés : 
+	1- problème de concurence, le thread principal manipule la structure en écriture tandis que le thread de la fenetre  en lecture
+		remarque : visiblement ça ne pose pas de problème pour l'instant ( à voir avec le prof  ) 
+	
+	2- gestion des fenêtre,(intuitivement, la liste des fenêtres, une fenetre c'est une structure options + un thread ) après une réflexion approfondie sur le problème on a conclu que la meilleure option est d'attribuer la tache 
+	   de lancement de plusieures fenetres au thread principal, en outre il faut gérer le problème du shell (comment dire au shell qu'il s'agit de telle ou telle fenêtre, 
+	   le shell doit pouvoir switcher entre les fenêtres, et doit être explicite au fait de laisser la main à l'utilisateur de taper des options sur la bonne fenêtre),
+	   l'une des solutions proposées est que le shell puisse réagir à la fenêtre qui a le focus à cet instant, Exemple : étant donnée une fnêtre A et B,pour faire un copie-coller de la fenetre A
+	   vers la fenêtre B, on lance les deux fenêtres, et on met le focus sur la fenêtre A, le shell réagit et nous demande de taper des options de la fenêtre A (copier), ensuite, on met le focus sur la fenêtre B
+	   et le shell switche et nous demande de fournir les options de la fenêtre B (coller) 
+	
+	3- stockage des données intermediaires, si on reprend l'exemple précedent du copier-coller, les données copiers vont soit être stocké dans un fichier intermédiare, soit utiliser le presse-papiers fourni par l'OS
+
+
+         
+	   
+ 
+ 
+	
+

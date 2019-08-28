@@ -1,0 +1,4 @@
+Compte rendu de la semaine du  18/03/2019  au  22/03/2019 : 
+1- Mise en commun du travail effectue lors des denieres semaines
+2- Partage de nouvelle tache (Symetrie d'une image, Sauvegarde dans un autre format, Selection dans la surface)
+3- Ajout du diagramme de classe au projet

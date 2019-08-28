@@ -1,0 +1,6 @@
+Compte rendu de la semaine du  25/02/2019  au  01/03/2019 : 
+			
+1- Decouverte de pthreads(Creation, Suppression, Partage de Variable)
+2- Premiere approche de pthreads(Creation d'une fenetre a partir d'un thread)
+3- Mise en place du squelette du projet
+4- Decouverte des mutex(Initialisation, Verrouillage, Deverouillage, Destruction)

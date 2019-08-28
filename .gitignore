@@ -1,0 +1,9 @@
+Test/*
+management/*
+bfg.jar
+Test/*
+.vscode/*
+*.o
+*.a
+*.png
+

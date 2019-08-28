@@ -1,0 +1,7 @@
+Rapport du 06/05/2019 au 10/05/2019:
+
+Ce qui fait la semaine derniere : 
+
+	-Restructuration du projet et ajout d'un Makefile recursif
+	-Changement de la variable globale
+	-Ajout du module zone et de son affichage

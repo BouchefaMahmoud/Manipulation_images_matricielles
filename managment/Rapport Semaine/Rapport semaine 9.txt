@@ -1,0 +1,10 @@
+Rapport du 08/04/2019 au 12/04/2019
+
+Ce qui a été effectué :
+
+	-Mise en place d'une 1er version du projet (Squelette)
+
+Ce qui va etre fait pour la semaine prochaine:
+
+	-Restructuration et grosse mise à jour du shell (ajout des signatures de fonctions pour que le parser puissent effectuer le parsing des commandes)
+

@@ -1,0 +1,20 @@
+Rapport de la semaine 5, du 15/03 au 22/03:
+
+Nous avons au cours de la semaine 5, effectué plusieurs changements, avancés et/ou modifications.
+
+1 - Nous avons pu réglé le problème de la rotation d'images avec SDL2 et lancé via un thread l'execution du programme.
+
+2 - Par ailleurs, nous avons via des threads ouvert et charger plusieurs types d'images.
+
+3 - La partie sur le zoom et dé-zoom d'image chargée auparavant, a été introduite dans le projet.
+
+
+
+
+
+
+
+
+
+Les problemes rencontrés ont été de installer TOUS LES PAQUETS NECESSAIRES  de SDL2 pour l'utiliser à bien et dans sa totalité.
+

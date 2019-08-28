@@ -1,0 +1,9 @@
+Rapport du 01/04/2019 au 05/04/2019
+
+Ce qui a été effectué la semaine derniere:
+	
+		-Creation d'un effet d'animation
+
+Ce qui va etre fait pour la semaine prochaine:
+
+		-Mise en place d'une 1er version du projet (Squelette)

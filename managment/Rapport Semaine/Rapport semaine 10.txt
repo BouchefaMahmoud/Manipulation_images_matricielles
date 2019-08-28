@@ -1,0 +1,9 @@
+Rapport du 15/04/2019 au 19/04/2019
+
+Ce qui a été effectué :
+
+	-Debuggage et restructuration et grosse mise à jour du shell (ajout des signatures de fonctions pour que le parser puissent effectuer le parsing des commandes)
+
+
+
+

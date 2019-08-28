@@ -1,0 +1,12 @@
+Rapport du 25/03/2019 au 29/03/2019
+
+Ce qui qui est effectué :
+
+	-Ajout de la fonction de recuperation d'un pixel 
+	-Ecriture d'un programme qui convertie un format d'image en un autre format d'image
+
+Quelques correcions ont été faites sur la conversion d'image 
+
+Les taches à accomplir pour la semaine suivante :
+
+	-creation d'un effet d'animation pour une vraie 1er structure du projet.
